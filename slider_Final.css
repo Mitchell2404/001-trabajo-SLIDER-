@@ -1,0 +1,23 @@
+#slider{
+border: 1px solid gray;
+background: gray;
+width: 50%;
+height: 10px;
+position: relative;
+margin: auto;
+border-radius: 10px;
+}
+
+#slider span{
+    background-image: linear-gradient(rgb(0, 35, 68), rgb(0, 21, 37));
+    height: 150%;
+    width: 10%;
+    border-color: aquamarine;
+    border-radius: 25px;
+    outline: none;
+    position: absolute;
+    top:-25%
+}
+#slider span:active{
+    background: rgb(0, 130, 182);
+}
