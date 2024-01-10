@@ -1,24 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Slider functionality</title>
+      <link href = "https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css"  rel = "stylesheet">
+       <link rel="stylesheet" href="slider_milton.css"> 
+         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+         <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script> -->
+         <script src="jquery-ui.min.js"></script>
+         <script src="jquery.ui.touch-punch.min.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
-    <script src="jquery.ui.touch-punch.min.js"></script>
-    <link rel="stylesheet" href="slider.css">
-
-
-</head>
-
-
-
-<body>
-    <div id="slider"></div>
-
-    <script>$('#slider').draggable();</script>
-</body>
-
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#slider" ).slider();
+         });
+      </script>
+   </head>
+   
+   <body>
+      <!-- HTML --> 
+      <div id = "slider"></div>
+   </body>
 </html>
