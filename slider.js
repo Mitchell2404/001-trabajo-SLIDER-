@@ -3,6 +3,13 @@ $(document).ready(function(){
     function moverslider(event){
         var pos= $(event.currentTarget).offset();
         var posx= event.pageX || event.originalEvent.touches[0].pageX - pos.left;
+
+        var touch = event.originalEvent && event.originalEvent.touches && event.originalEvent.touches[0];
+        e = touch || event;
+        var offset = $(e.target).offset()
+        posx = event.pageX  - offset.left,
+        y = event.pageY  - offset.top;
+
         var valorslider = (posx*100)/$(event.currentTarget).outerWidth();
         if(posx>=0 && posx<= $(event.currentTarget).outerWidth()){
      
